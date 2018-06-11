@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains show_node.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function show_node_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the show_node module.
+    case 'help.page.show_node':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Muestra Nodo en un menu') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function show_node_theme() {
+  return [
+    'show_node' => [
+      'render element' => 'children',
+    ],
+  ];
+}

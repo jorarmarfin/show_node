@@ -1,0 +1,5 @@
+name: 'Show Node'
+type: module
+description: 'Muestra Nodo en un menu'
+core: 8.x
+package: 'Custom'
