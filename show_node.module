@@ -29,7 +29,10 @@ function show_node_help($route_name, RouteMatchInterface $route_match) {
 function show_node_theme() {
   return [
     'show_node' => [
-      'render element' => 'children',
+      'variables' => [
+        'data' => NULL,
+      ],
+      'template' => 'show-node',
     ],
   ];
 }

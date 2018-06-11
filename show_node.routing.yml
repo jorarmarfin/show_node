@@ -1,0 +1,7 @@
+
+show_node.default_controller_hello:
+  path: '/transparencia/{name}'
+  defaults:
+    _controller: '\Drupal\show_node\Controller\DefaultController::Default'
+  requirements:
+    _permission: 'access content'

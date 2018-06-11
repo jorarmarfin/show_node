@@ -1,1 +1,10 @@
-<!-- Add you custom twig html here -->
+<header class="node__header">
+	<h1 class="node__title">
+		<span >{{data.title}}</span>
+	</h1>
+</header>
+<div class="node__content">
+	<div class="field-node--body">
+		{{data.body | raw}}
+	</div>
+</div>
