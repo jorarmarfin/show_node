@@ -16,12 +16,12 @@ class DefaultController extends ControllerBase {
    * @return string
    *   Return Default string.
    */
-  public function Default($name) {
+  public function Default($nid) {
     $data = [];
-    $node = Node::load(66);
+    $node = Node::load($nid);
 
     $data['title'] = $node->title->value;
-    $data['body'] = $node->field_cuerpo2->value;
+    $data['body'] = $node->body->value;
 
     return [
       '#theme' => 'show_node',
